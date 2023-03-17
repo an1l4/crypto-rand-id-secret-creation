@@ -1,0 +1,22 @@
+# crypto-rand-id-secret-creation
+go mod init github.com/an1l4/crypto-rand
+
+#description of crypto/rand package
+----------------------------------
+The crypto/rand package in Go implements the cryptographically secure random numbers.
+There are three functions in this package in total
+
+#The rand.Read() method
+----------------------
+This function is a helper function which is simply a read method and generate random string
+
+
+#The rand.Int() method
+---------------------
+This function returns a random value inside the range of [0, upper_bound).
+This function is good for generating cryptographically secure random numbers in a range.
+
+#The rand.Prime() method
+-----------------------
+This function generates a prime number of the size provided.
+v, e := rand.Prime(rand.Reader, 1024)
